@@ -1,0 +1,61 @@
+root, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    margin: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: lightcyan;
+}
+
+#main #main_top {
+    position: absolute;
+    top: 0;
+
+    height: 15%;
+    min-height: 100px;
+    width: 100%;
+    
+    background-color: lightblue;
+}
+
+#main #main_bottom {
+    position: absolute;
+    bottom: 0;
+    
+    height: 15%;
+    min-height: 100px;
+    width: 100%;
+    
+    background-color: lightblue;
+
+    text-align: center;
+}
+#main #main_bottom .mb_button {
+    width: 15%;
+    height: 90%;
+    display: inline-block;
+
+    margin: 0 2%;
+
+    cursor: pointer;
+
+    vertical-align: middle;
+    font-size: 2em;
+}
+#main #main_bottom .mb_button img {
+    width: 100%;
+}
+
+#main #main_content {
+    position: absolute;
+    top: 15%;
+
+    height: calc(100% - 30%);
+    overflow-y: scroll;
+    width: 100%;
+}
