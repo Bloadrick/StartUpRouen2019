@@ -1,0 +1,31 @@
+#main_content_contact {
+    height: 250px;
+    vertical-align: middle;
+}
+#main_content_contact div, #main_content_contact img {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.contact_picture {
+    width: 250px;
+    border-radius: 125px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.contact_name {
+
+}
+
+.contact_mail {
+    
+}
+.contact_mail .contact_mail_number {
+    
+}
+.contact_mail .contact_mail_icon {
+    
+}

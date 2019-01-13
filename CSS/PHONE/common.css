@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "Coolvetica";
+    src: url("../../ASSETS/FONT/coolvetica.ttf");
+}
+
 root, html, body {
     padding: 0;
     margin: 0;
+
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 1em;
 }
 
 #main {
@@ -9,53 +17,116 @@ root, html, body {
     height: 100vh;
     width: 100%;
 
-    background-color: lightcyan;
+    background-color: #fafafa;
+
+    overflow: hidden;
 }
 
-#main #main_top {
+#main_top {
+    z-index: 10;
+
     position: absolute;
     top: 0;
 
-    height: 15%;
+    height: 100px;
     min-height: 100px;
     width: 100%;
-    
-    background-color: lightblue;
+
+    background-color: #E0E0E0;
+    border-bottom: 1px solid black;
+}
+#main_top #main_top_title {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
 }
 
-#main #main_bottom {
+#main_bottom {
+    z-index: 10;
+
     position: absolute;
     bottom: 0;
     
-    height: 15%;
+    height: 260px;
     min-height: 100px;
     width: 100%;
     
-    background-color: lightblue;
-
     text-align: center;
+
+    background-color: #E0E0E0;
+    border-top: 1px solid black;
 }
-#main #main_bottom .mb_button {
+#main_bottom .mb_button {
     width: 15%;
-    height: 90%;
     display: inline-block;
 
-    margin: 0 2%;
+    margin: 50px 2% 0 2%;
 
     cursor: pointer;
 
     vertical-align: middle;
     font-size: 2em;
 }
-#main #main_bottom .mb_button img {
-    width: 100%;
+#main_bottom .mb_button img {
+    width: 80%;
+    margin-bottom: 15px;
 }
 
-#main #main_content {
+#main_loading {
+    z-index: 0;
+
     position: absolute;
-    top: 15%;
-
-    height: calc(100% - 30%);
-    overflow-y: scroll;
-    width: 100%;
+    
+    height: 700px;
+    margin-left: calc(50% - 350px);
+    margin-top: calc(50% - 75px);
 }
+#main_content {
+    visibility: hidden;
+
+    z-index: 0;
+
+    position: absolute;
+    top: 100px;
+
+    height: calc(100% - 360px);
+    overflow-y: auto;
+    width: 90%;
+    margin: 0 5%;
+    border: none;
+}
+#main_content_footer {
+    height: 50px;
+}
+#help_button {
+    float: right;
+    width: 100px;
+    right: 20px;
+    margin-top: 35px;
+}
+#main_content #main_content_title {
+    margin: 50px 0;
+    font-size: 50px;
+}
+#main_content .main_content_title {
+    margin: 40px 0 20px 0;
+}
+
+#main_content .main_content_div {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px; 
+    padding: 50px;
+}
+
+.tag {
+    display: inline-block;
+
+    background-color: #fafafa;
+    border: solid 2px lightgray;
+
+    text-align: center;
+    font-size: 40px;
+}
+

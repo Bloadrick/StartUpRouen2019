@@ -1,0 +1,29 @@
+.main_content_div {
+    margin-bottom: 50px;
+}
+
+.actu_picture {
+    float: left;
+    width: 235px;
+    border-radius: 25px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.actu_infos {
+
+}
+.actu_infos .actu_title {
+    width: 100%;
+    text-align: center;
+}
+.actu_infos .actu_preview {
+    
+}
+.actu_infos .actu_plus {
+    width: 100%;
+    text-align: right;
+    text-decoration: underline;
+    margin-top: 10px;
+}
